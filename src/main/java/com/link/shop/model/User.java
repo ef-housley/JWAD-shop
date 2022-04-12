@@ -5,23 +5,23 @@ import java.util.Date;
 public class User {
     private Integer user_id;
     private String user_username;
+    private String user_password;
     private String user_first_name;
     private String user_last_name;
     private String user_email;
-    private String user_password;
-    private Enum user_occupation;
-    private Date user_joined;
+    private String user_phone;
 
 
-    public User(Integer user_id, String user_username, String user_first_name, String user_last_name, String user_email, String user_password, Enum user_occupation, Date user_joined) {
+
+    public User() {
         this.user_id = user_id;
         this.user_username = user_username;
         this.user_first_name = user_first_name;
         this.user_last_name = user_last_name;
         this.user_email = user_email;
         this.user_password = user_password;
-        this.user_occupation = user_occupation;
-        this.user_joined = user_joined;
+        this.user_phone = user_phone;
+
     }
 
     public Integer getUser_id() {
@@ -72,20 +72,12 @@ public class User {
         this.user_password = user_password;
     }
 
-    public Enum getUser_occupation() {
-        return user_occupation;
+    public String getUser_phone() {
+        return user_phone;
     }
 
-    public void setUser_occupation(Enum user_occupation) {
-        this.user_occupation = user_occupation;
-    }
-
-    public Date getUser_joined() {
-        return user_joined;
-    }
-
-    public void setUser_joined(Date user_joined) {
-        this.user_joined = user_joined;
+    public void setUser_phone(String user_phone) {
+        this.user_phone = user_phone;
     }
 }
 
